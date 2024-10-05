@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <title>Pill Reminder App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;  /* Light background color */
+            color: #333;  /* Dark text for readability */
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #d85d99;  /* Soft pink color for headings */
+            text-align: center;
+        }
+
+        #calendar {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;  /* White background for the calendar */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        form {
+            background-color: #ffffff;  /* White form background */
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #d85d99;  /* Soft pink for labels */
+        }
+
+        input {
+            width: calc(100% - 20px);  /* Full width minus padding */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #d85d99;  /* Button color matching theme */
+            color: white;  /* White text on button */
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #c84f8f;  /* Darker shade on hover */
+        }
+
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            background-color: #d4edda;  /* Light green for success messages */
+            color: #155724;  /* Dark green text */
+        }
+    </style>
+</head>
+<body>
+    <h1>Pill Reminder App</h1>
+
+    <!-- Display flash messages -->
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="alert">
+          {{ messages[0] }}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <div id="calendar"></div>
+    <form action="/set_reminder" method="post">
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required>
+
+        <label for="date">Date:</label>
+        <input type="text" id="date" name="date" required placeholder="YYYY-MM-DD">
+
+        <label for="time">Time:</label>
+        <input type="text" id="time" name="time" required placeholder="HH:MM AM/PM">
+
+        <button type="submit">Set Reminder</button>
+    </form>
+
+    <script>
+        // Initialize FullCalendar
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                dateClick: function(info) {
+                    // When a date is clicked, set the date input field
+                    document.getElementById('date').value = info.dateStr;
+                }
+            });
+            calendar.render();
+        });
+
+        // Initialize Flatpickr for time input
+        flatpickr("#time", {
+            enableTime: true,
+            noCalendar: true,
+            dateFormat: "h:i K",
+            time_24hr: false
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+[
+    {
+        "summary": "Meeting with Bob",
+        "location": "Office",
+        "description": "Discuss project updates",
+        "start": {
+            "dateTime": "2024-10-05T10:00:00",
+            "timeZone": "America/New_York"
+        },
+        "end": {
+            "dateTime": "2024-10-05T11:00:00",
+            "timeZone": "America/New_York"
+        }
+    },
+    {
+        "summary": "Lunch with Alice",
+        "location": "Restaurant",
+        "description": "Catch up over lunch",
+        "start": {
+            "dateTime": "2024-10-06T12:30:00",
+            "timeZone": "America/New_York"
+        },
+        "end": {
+            "dateTime": "2024-10-06T13:30:00",
+            "timeZone": "America/New_York"
+        }
+    }
+]

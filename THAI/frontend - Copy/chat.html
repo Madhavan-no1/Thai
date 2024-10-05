@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chatbot Page</title>
+    <style>
+        /* CSS Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px 50px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .heading {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            background-color: #a8e0ff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            margin: 20px 0;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        .speak-btn {
+            background-color: #00bcd4;
+            color: white;
+        }
+
+        .speak-btn:hover {
+            background-color: #0097a7;
+        }
+
+        .reminder-btn {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .reminder-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .nutritional-btn {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .nutritional-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">DASHBOARD</h2>
+        
+        <!-- Speak Button -->
+        <button class="speak-btn" onclick="window.location.href='http://localhost:8502/'">Speak</button>
+        
+        <!-- Medication Reminder Button -->
+        <button class="reminder-btn" onclick="window.location.href='http://127.0.0.1:5000/'">Medication Reminder</button>
+        
+        <!-- Nutritional Value Checker Button -->
+        <button class="nutritional-btn" onclick="window.location.href='http://127.0.0.1:5001/'">Nutritional Value Checker</button>
+    </div>
+</body>
+</html>

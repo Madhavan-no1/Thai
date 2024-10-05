@@ -1,0 +1,196 @@
+/* CSS for First Page (index.html) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('THAI (2).png') no-repeat center center/cover;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    width: 60%;
+    background: rgb(135, 244, 250);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: #000000;
+    margin: 20px 0 40px;
+}
+
+.get-started {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.get-started:hover {
+    background-color: #333;
+}
+
+/* CSS for Second Page (chat.html) */
+body.second-page {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #dff3f5, #f4e3f2);
+}
+
+.container.second-page {
+    text-align: center;
+    padding: 40px;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.top-row {
+    padding-bottom: 30px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.bottom-row {
+    padding-top: 20px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+    background: #9ad3da;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.speak-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #000;
+    background-color: #9ad3da;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.speak-btn:hover {
+    background-color: #9ad3da;
+}
+
+.text-area {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+}
+
+.file-upload {
+    margin-bottom: 20px;
+}
+
+.file-upload-label {
+    font-size: 1rem;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.file-input {
+    display: none;
+}
+
+.reminder-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.medication-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.medication-list li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f9f3d2;
+    border-radius: 10px;
+}
+.reminder-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.reminder-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.reminder-btn:hover {
+    background-color: #0056b3;
+}
+
+.medication-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.medication-list li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f9f3d2;
+    border-radius: 10px;
+}
