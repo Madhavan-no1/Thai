@@ -67,9 +67,19 @@ Open your web browser and navigate to http://localhost:8501 to interact with the
 - [@Dhaanush N V](https://www.github.com/dhaanush)
 - [@Dhinesh Kumar A](https://www.github.com/Dhineshsaff)
 - [@Hemachandran](https://www.github.com/hemazhandranzz)
-## Screenshots
+## Screenshots of working model
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+Homepage
+![Screenshot (163)](https://github.com/user-attachments/assets/a79042f9-9a9c-4a1a-b6e1-3a262dff99d8)
+Dashboard
+![Screenshot (164)](https://github.com/user-attachments/assets/ffa7d32e-5873-42b8-bf58-72cc1218cf2f)
+Thai Chat-
+![Screenshot (165)](https://github.com/user-attachments/assets/4d1877ef-76fe-4c50-9f4e-5c4d440944e6)
+Thai Calendar- 
+![Screenshot (167)](https://github.com/user-attachments/assets/6c054042-c8c0-4aff-9a1b-3b5f21cc16cf)
+Thai Vision-
+![Screenshot (168)](https://github.com/user-attachments/assets/d23e3542-daff-4607-8be6-2e09466dd6b0)
+
 
 
 ## Tech Stack
